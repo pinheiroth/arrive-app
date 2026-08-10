@@ -8,6 +8,10 @@ import Agendamento from "./pages/Agendamento"
 import Ajuda from "./pages/Ajuda"
 import Download from "./pages/Download"
 import Segurança from "./pages/Segurança"
+import CookiesPage from "./pages/Cookies"
+import PrivacidadePage from "./pages/Privacidade"
+import TermosPage from "./pages/Termos"
+
 
 function App() {
   return (
@@ -21,6 +25,9 @@ function App() {
         <Route path="/ajuda" element={<Ajuda />} />
         <Route path="/download" element={<Download />} />
         <Route path="/seguranca" element={<Segurança />} />
+        <Route path="/cookies" element={<CookiesPage />} />
+        <Route path="/privacidade" element={<PrivacidadePage />} />
+        <Route path="/termos" element={<TermosPage />} />
       </Routes>
     </BrowserRouter>
   )
