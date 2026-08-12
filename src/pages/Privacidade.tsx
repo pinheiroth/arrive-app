@@ -168,7 +168,7 @@ export default function PrivacidadePage() {
                   href="mailto:suporte@arriveonline.com.br"
                   className="mt-4 inline-block font-semibold text-gold-deep"
                 >
-                  suporte@arriveonline.com.br
+                  adm@arriveapp.com.br
                 </a>
               </div>
             </div>

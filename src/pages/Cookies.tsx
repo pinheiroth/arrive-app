@@ -161,7 +161,7 @@ export default function CookiesPage() {
                 </p>
 
                 <a
-                  href="mailto:suporte@arriveonline.com.br"
+                  href="mailto:adm@arriveapp.com.br"
                   className="mt-4 inline-block font-semibold text-gold-deep"
                 >
                   Falar com a Arrive

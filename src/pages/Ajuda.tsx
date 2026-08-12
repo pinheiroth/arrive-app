@@ -379,7 +379,7 @@ export default function HelpPage() {
             </div>
 
             <a
-              href="https://wa.me/5522999999999"
+              href="https://wa.me/5521983809240"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 inline-flex h-10 w-full items-center justify-center gap-2 rounded-lg bg-primary text-sm font-semibold text-primary-foreground transition hover:opacity-90"

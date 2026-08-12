@@ -4,10 +4,6 @@ import { StoreBadges } from "../components/ui/StoreBadges";
 import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
-// ===============================
-// LINKS DOS APLICATIVOS
-// ===============================
-
 const PASSENGER_ANDROID_URL =
   "https://play.google.com/store/apps/details?id=br.com.arrive.passenger.drivermachine&hl=pt_BR";
 
@@ -16,10 +12,6 @@ const PASSENGER_IOS_URL =
 
 const DRIVER_ANDROID_URL =
   "https://play.google.com/store/apps/details?id=br.com.arrive.taxi.drivermachine&hl=pt_BR";
-
-// ===============================
-// BENEFÍCIOS
-// ===============================
 
 const benefits = [
   {
