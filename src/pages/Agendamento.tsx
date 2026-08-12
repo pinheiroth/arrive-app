@@ -173,7 +173,7 @@ export default function SchedulePage() {
         <div className="container-page relative py-28 md:py-36">
           <div className="max-w-4xl">
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
-              Agendamento online
+              Simule seu agendamento
             </span>
 
             <h1 className="mt-5 text-5xl font-bold leading-tight md:text-6xl">
@@ -191,10 +191,8 @@ export default function SchedulePage() {
         </div>
       </section>
 
-      {/* FORMULÁRIO */}
       <section className="container-page max-w-4xl py-24">
         <div className="rounded-3xl border border-border bg-card p-8 shadow-elegant md:p-10">
-          {/* HEADER */}
           <div className="flex items-center gap-3">
             <div className="grid h-12 w-12 place-items-center rounded-xl bg-gold/15 text-gold-deep">
               <CalendarClock className="h-6 w-6" />
@@ -212,7 +210,6 @@ export default function SchedulePage() {
           </div>
 
           <div className="mt-8 space-y-5">
-            {/* ORIGEM */}
             <div>
               <label
                 htmlFor="origin"
@@ -237,7 +234,6 @@ export default function SchedulePage() {
               </div>
             </div>
 
-            {/* DESTINO */}
             <div>
               <label
                 htmlFor="destination"
@@ -262,7 +258,6 @@ export default function SchedulePage() {
               </div>
             </div>
 
-            {/* DISTÂNCIA */}
             <div>
               <label
                 htmlFor="distance"
@@ -297,7 +292,6 @@ export default function SchedulePage() {
               </p>
             </div>
 
-            {/* DATA / HORÁRIO */}
             <div className="grid gap-4 md:grid-cols-2">
               <div>
                 <label
@@ -338,7 +332,6 @@ export default function SchedulePage() {
               </div>
             </div>
 
-            {/* CATEGORIA */}
             <div>
               <label
                 htmlFor="category"
@@ -373,7 +366,6 @@ export default function SchedulePage() {
               </div>
             </div>
 
-            {/* BOTÃO */}
             <button
               type="button"
               onClick={calculateRoute}
@@ -385,7 +377,6 @@ export default function SchedulePage() {
                 : "Calcular estimativa"}
             </button>
 
-            {/* RESULTADO */}
             {distance !== null && (
               <div className="rounded-2xl border border-border bg-soft p-6">
                 <div className="mb-5">
@@ -399,7 +390,6 @@ export default function SchedulePage() {
                 </div>
 
                 <div className="grid gap-5 md:grid-cols-3">
-                  {/* DISTÂNCIA */}
                   <div>
                     <p className="text-sm text-muted-foreground">
                       Distância
@@ -410,7 +400,6 @@ export default function SchedulePage() {
                     </p>
                   </div>
 
-                  {/* TEMPO */}
                   <div>
                     <p className="text-sm text-muted-foreground">
                       Tempo estimado
@@ -423,7 +412,6 @@ export default function SchedulePage() {
                     </p>
                   </div>
 
-                  {/* PREÇO */}
                   <div>
                     <p className="text-sm text-muted-foreground">
                       Valor estimado
@@ -440,7 +428,6 @@ export default function SchedulePage() {
               </div>
             )}
 
-            {/* AVISO */}
             <div className="flex gap-2 rounded-xl border border-border bg-background p-4 text-sm text-muted-foreground">
               <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-gold-deep" />
 

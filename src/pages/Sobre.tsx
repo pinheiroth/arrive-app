@@ -151,19 +151,12 @@ export default function SobrePage() {
                 Baixar aplicativo
                 <ArrowRight className="h-4 w-4" />
               </a>
-
-              <a
-                href="/seguranca"
-                className="inline-flex h-12 items-center gap-2 rounded-full border border-white/20 px-7 font-semibold transition hover:bg-white/10"
-              >
-                Conhecer nossa segurança
-              </a>
+              
             </div>
           </div>
         </div>
       </section>
 
-      {/* MISSÃO + ESTATÍSTICAS */}
       <section className="container-page grid items-center gap-16 py-24 md:grid-cols-2">
         <div>
           <span className="text-xs font-semibold uppercase tracking-wider text-gold-deep">
@@ -227,7 +220,6 @@ export default function SobrePage() {
         </div>
       </section>
 
-      {/* COMO FUNCIONA */}
       <section className="bg-soft py-24">
         <div className="container-page">
           <div className="max-w-2xl">
@@ -267,7 +259,6 @@ export default function SobrePage() {
         </div>
       </section>
 
-      {/* CTA DOWNLOAD */}
       <section className="container-page py-24">
         <div className="relative overflow-hidden rounded-3xl bg-hero p-10 text-center text-primary-foreground shadow-elegant md:p-16">
           <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-gold/20 blur-3xl" />

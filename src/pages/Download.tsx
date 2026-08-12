@@ -4,11 +4,11 @@ import { StoreBadges } from "../components/ui/StoreBadges";
 import Navbar from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
-const PASSENGER_ANDROID_URL =
-  "https://play.google.com/store/apps/details?id=br.com.arrive.passenger.drivermachine&hl=pt_BR";
+//const PASSENGER_ANDROID_URL =
+  //"https://play.google.com/store/apps/details?id=br.com.arrive.passenger.drivermachine&hl=pt_BR";
 
-const PASSENGER_IOS_URL =
-  "https://apps.apple.com/br/app/arrive/id6741321636";
+//const PASSENGER_IOS_URL =
+ // "https://apps.apple.com/br/app/arrive/id6741321636";
 
 const DRIVER_ANDROID_URL =
   "https://play.google.com/store/apps/details?id=br.com.arrive.taxi.drivermachine&hl=pt_BR";
@@ -84,7 +84,6 @@ export default function Download() {
 
       <Navbar />
 
-      {/* HERO */}
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-20">
           <img
@@ -114,7 +113,6 @@ export default function Download() {
         </div>
       </section>
 
-      {/* DOWNLOADS */}
       <section className="container-page py-24">
         <div className="mx-auto max-w-5xl">
           <div className="text-center">
@@ -129,9 +127,6 @@ export default function Download() {
           </div>
 
           <div className="mt-14 grid gap-8 lg:grid-cols-2">
-            {/* =========================
-                PASSAGEIRO
-            ========================= */}
             <div className="rounded-3xl border border-border bg-soft p-8 shadow-soft">
               <div className="flex items-center gap-4">
                 <div className="grid h-14 w-14 place-items-center rounded-2xl bg-gold text-accent-foreground">
@@ -149,64 +144,62 @@ export default function Download() {
                 </div>
               </div>
 
-              <div className="mt-8 grid gap-5 sm:grid-cols-2">
-                {/* iOS */}
-                <a
-                  href={PASSENGER_IOS_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group rounded-2xl border border-border bg-card p-5 text-center transition hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <div className="rounded-xl bg-white p-3">
-                    <img
-                      src="/qr-code-ios.png"
-                      alt="QR Code para baixar o Arrive Passageiro no iPhone"
-                      className="mx-auto h-40 w-40 object-contain"
-                    />
-                  </div>
+              {/* 
+                <div className="mt-8 grid gap-5 sm:grid-cols-2">
+                  
+                  <a
+                    href={PASSENGER_IOS_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group rounded-2xl border border-border bg-card p-5 text-center transition hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    <div className="rounded-xl bg-white p-3">
+                      <img
+                        src="/qr-code-ios.png"
+                        alt="QR Code para baixar o Arrive Passageiro no iPhone"
+                        className="mx-auto h-40 w-40 object-contain"
+                      />
+                    </div>
 
-                  <p className="mt-4 font-semibold text-primary">
-                    iPhone
-                  </p>
+                    <p className="mt-4 font-semibold text-primary">
+                      iPhone
+                    </p>
 
-                  <p className="text-xs text-muted-foreground">
-                    App Store
-                  </p>
-                </a>
+                    <p className="text-xs text-muted-foreground">
+                      App Store
+                    </p>
+                  </a>
+  
+                  <a
+                    href={PASSENGER_ANDROID_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group rounded-2xl border border-border bg-card p-5 text-center transition hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    <div className="rounded-xl bg-white p-3">
+                      <img
+                        src="/qr-code-android.png"
+                        alt="QR Code para baixar o Arrive Passageiro no Android"
+                        className="mx-auto h-40 w-40 object-contain"
+                      />
+                    </div>
 
-                {/* Android */}
-                <a
-                  href={PASSENGER_ANDROID_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group rounded-2xl border border-border bg-card p-5 text-center transition hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <div className="rounded-xl bg-white p-3">
-                    <img
-                      src="/qr-code-android.png"
-                      alt="QR Code para baixar o Arrive Passageiro no Android"
-                      className="mx-auto h-40 w-40 object-contain"
-                    />
-                  </div>
+                    <p className="mt-4 font-semibold text-primary">
+                      Android
+                    </p>
 
-                  <p className="mt-4 font-semibold text-primary">
-                    Android
-                  </p>
+                    <p className="text-xs text-muted-foreground">
+                      Google Play
+                    </p>
+                  </a> 
+               </div>
+               */}
 
-                  <p className="text-xs text-muted-foreground">
-                    Google Play
-                  </p>
-                </a>
-              </div>
-
-              <div className="mt-8">
+              <div className="mt-8 flex flex-col items-center">
                 <StoreBadges variant="dark" />
               </div>
             </div>
 
-            {/* =========================
-                MOTORISTA
-            ========================= */}
             <div className="rounded-3xl border border-border bg-soft p-8 shadow-soft">
               <div className="flex items-center gap-4">
                 <div className="grid h-14 w-14 place-items-center rounded-2xl bg-gold text-accent-foreground">
@@ -219,35 +212,36 @@ export default function Download() {
                   </h3>
 
                   <p className="mt-1 text-sm text-muted-foreground">
-                    Conecte-se aos passageiros e comece a dirigir.
+                    Conecte-se aos passageiros e comece a dirigir. Disdisponível apenas para Android.
                   </p>
                 </div>
               </div>
 
-              {/* QR MOTORISTA */}
               <div className="mt-8 flex flex-col items-center">
-                <a
-                  href={DRIVER_ANDROID_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group rounded-2xl border border-border bg-card p-5 text-center transition hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <div className="rounded-xl bg-white p-3">
-                    <img
-                      src="/android.png"
-                      alt="icon para baixar o Arrive Motorista no Android"
-                      className="h-48 w-48 object-contain"
-                    />
-                  </div>
+                {/*
+                  <a
+                    href={DRIVER_ANDROID_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group rounded-2xl border border-border bg-card p-5 text-center transition hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    <div className="rounded-xl bg-white p-3">
+                      <img
+                        src="/android.png"
+                        alt="icon para baixar o Arrive Motorista no Android"
+                        className="h-48 w-48 object-contain"
+                      />
+                    </div>
 
-                  <p className="mt-4 font-semibold text-primary">
-                    Android
-                  </p>
+                    <p className="mt-4 font-semibold text-primary">
+                      Android
+                    </p>
 
-                  <p className="text-xs text-muted-foreground">
-                    Google Play
-                  </p>
-                </a>
+                    <p className="text-xs text-muted-foreground">
+                      Google Play
+                    </p>
+                  </a> 
+                */}
 
                 <a
                   href={DRIVER_ANDROID_URL}
@@ -263,7 +257,6 @@ export default function Download() {
         </div>
       </section>
 
-      {/* BENEFÍCIOS */}
       <section className="container-page pb-24">
         <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
           <div>

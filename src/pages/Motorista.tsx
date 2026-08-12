@@ -184,7 +184,6 @@ export default function DriverPage() {
         </div>
       </section>
 
-      {/* INTRO */}
       <section className="container-page py-24">
         <div className="max-w-4xl">
           <span className="text-xs font-semibold uppercase tracking-wider text-gold-deep">
@@ -210,7 +209,6 @@ export default function DriverPage() {
         </div>
       </section>
 
-      {/* HERO INFO */}
       <section className="container-page grid items-center gap-16 py-10 lg:grid-cols-2">
         <div className="relative">
           <img
@@ -275,7 +273,6 @@ export default function DriverPage() {
         </div>
       </section>
 
-      {/* 80% */}
       <section className="container-page py-12">
         <div className="relative overflow-hidden rounded-3xl bg-hero p-10 text-primary-foreground md:p-16">
           <div className="absolute -right-20 -top-20 h-80 w-80 rounded-full bg-gold/20 blur-3xl" />
@@ -299,7 +296,6 @@ export default function DriverPage() {
         </div>
       </section>
 
-      {/* REQUISITOS */}
       <section
         id="cadastro"
         className="bg-soft py-24"
@@ -335,7 +331,6 @@ export default function DriverPage() {
             ))}
           </div>
 
-          {/* LICENÇA */}
           <div className="mt-10 rounded-3xl border border-gold/20 bg-gold/5 p-8">
             <div className="flex items-start gap-4">
               <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-gold/15 text-gold-deep">
@@ -355,7 +350,6 @@ export default function DriverPage() {
             </div>
           </div>
 
-          {/* PASSOS */}
           <div className="mt-24">
             <div className="text-center">
               <span className="text-xs font-semibold uppercase tracking-wider text-gold-deep">
@@ -388,67 +382,6 @@ export default function DriverPage() {
               ))}
             </div>
           </div>
-
-          {/* FORM */}
-          <form
-            className="mt-20 space-y-5 rounded-3xl border border-border bg-card p-8 shadow-elegant md:p-10"
-            onSubmit={(event) => event.preventDefault()}
-          >
-            <div>
-              <span className="text-xs font-semibold uppercase tracking-wider text-gold-deep">
-                Pré-cadastro
-              </span>
-
-              <h3 className="mt-2 text-3xl font-bold text-primary">
-                Faça seu pré-cadastro
-              </h3>
-
-              <p className="mt-2 text-muted-foreground">
-                Preencha seus dados e nossa equipe entrará em contato.
-              </p>
-            </div>
-
-            <div className="grid gap-4 sm:grid-cols-2">
-              <input
-                className="h-12 rounded-xl border border-input bg-background px-4 outline-none transition focus:border-gold"
-                placeholder="Nome completo"
-                type="text"
-                name="name"
-                autoComplete="name"
-              />
-
-              <input
-                className="h-12 rounded-xl border border-input bg-background px-4 outline-none transition focus:border-gold"
-                placeholder="E-mail"
-                type="email"
-                name="email"
-                autoComplete="email"
-              />
-
-              <input
-                className="h-12 rounded-xl border border-input bg-background px-4 outline-none transition focus:border-gold"
-                placeholder="Telefone"
-                type="tel"
-                name="phone"
-                autoComplete="tel"
-              />
-
-              <input
-                className="h-12 rounded-xl border border-input bg-background px-4 outline-none transition focus:border-gold"
-                placeholder="Cidade"
-                type="text"
-                name="city"
-                autoComplete="address-level2"
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="h-12 w-full rounded-xl bg-primary font-semibold text-primary-foreground transition hover:opacity-90"
-            >
-              Enviar cadastro
-            </button>
-          </form>
         </div>
       </section>
       <Footer/>

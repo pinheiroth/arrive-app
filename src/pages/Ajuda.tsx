@@ -411,19 +411,13 @@ export default function HelpPage() {
 
             <div className="mt-8 flex flex-wrap gap-4">
               <a
-                href="mailto:suporte@arriveonline.com.br"
+                href="mailto:adm@arriveapp.com.br"
                 className="inline-flex h-12 items-center gap-2 rounded-full bg-gold px-7 font-semibold text-accent-foreground transition hover:opacity-90"
               >
                 Falar com suporte
                 <ArrowRight className="h-4 w-4" />
               </a>
 
-              <a
-                href="/seguranca"
-                className="inline-flex h-12 items-center gap-2 rounded-full border border-white/20 px-7 font-semibold transition hover:bg-white/10"
-              >
-                Conhecer segurança
-              </a>
             </div>
           </div>
         </div>

@@ -155,7 +155,6 @@ export default function SafetyPage() {
         </div>
       </section>
 
-      {/* RECURSOS DE SEGURANÇA */}
       <section className="container-page grid items-center gap-14 py-24 lg:grid-cols-2">
         <div>
           <img
@@ -196,7 +195,6 @@ export default function SafetyPage() {
         </div>
       </section>
 
-      {/* SEGURANÇA LEVADA A SÉRIO */}
       <section className="container-page pb-24">
         <div className="rounded-3xl border border-border bg-card p-10 shadow-elegant md:p-14">
           <div className="max-w-3xl">
@@ -223,8 +221,7 @@ export default function SafetyPage() {
           </div>
         </div>
       </section>
-
-      {/* ESTATÍSTICAS */}
+      
       <section className="container-page pb-24">
         <div className="grid gap-8 rounded-3xl bg-hero p-10 text-primary-foreground shadow-elegant md:grid-cols-3 md:p-14">
           {stats.map((stat) => (

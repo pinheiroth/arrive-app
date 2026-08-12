@@ -17,12 +17,12 @@ export function Footer() {
             </p>
            </div>
           <div>
-            <h3 className="text-sm text-gold font-semibold">Produto</h3>
+            <h3 className="text-sm text-gold font-semibold">Empresa</h3>
 
             <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
               <li>
                 <a
-                  href="#app"
+                  href="/sobre"
                   className="transition-colors hover:text-foreground"
                 >
                   Sobre o app
@@ -31,7 +31,7 @@ export function Footer() {
 
               <li>
                 <a
-                  href="#agendamento"
+                  href="/agendamento"
                   className="transition-colors hover:text-foreground"
                 >
                   Agendamento
@@ -40,7 +40,7 @@ export function Footer() {
 
               <li>
                 <a
-                  href="#seguranca"
+                  href="/seguranca"
                   className="transition-colors hover:text-foreground"
                 >
                   Segurança
@@ -49,7 +49,7 @@ export function Footer() {
 
               <li>
                 <a
-                  href="#download"
+                  href="/download"
                   className="transition-colors hover:text-foreground"
                 >
                   Download
@@ -59,44 +59,36 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-gold">Empresa</h3>
+            <h3 className="text-sm font-semibold text-gold">Produto</h3>
 
             <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
               <li>
                 <a
-                  href="#motorista"
+                  href="/motorista"
                   className="transition-colors hover:text-foreground"
                 >
                   Seja motorista
                 </a>
               </li>
 
+               <li>
+                <a
+                  href="/passageiro"
+                  className="transition-colors hover:text-foreground"
+                >
+                  Seja passageiro
+                </a>
+              </li>
+
               <li>
                 <a
-                  href="#suporte"
+                  href="/ajuda"
                   className="transition-colors hover:text-foreground"
                 >
                   Ajuda & Suporte
                 </a>
               </li>
 
-              <li>
-                <a
-                  href="#carreiras"
-                  className="transition-colors hover:text-foreground"
-                >
-                  Carreiras
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#imprensa"
-                  className="transition-colors hover:text-foreground"
-                >
-                  Imprensa
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -114,14 +106,14 @@ export function Footer() {
                 </a>
               </li>
 
-              <li>
+            {/*  <li>
                 <a
                   href="tel:+5508001234567"
                   className="transition-colors hover:text-foreground"
                 >
                   0800 123 4567
                 </a>
-              </li>
+              </li>*/}
             </ul>
           </div>
         </div>
@@ -129,10 +121,8 @@ export function Footer() {
         <div className="mt-14 flex flex-col gap-5 border-t border-border pt-8 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between">
           <div>
             <p>© {new Date().getFullYear()} Arrive. Todos os direitos reservados.</p>
+            <p className="mt-1">RC SERVICOS DE TECNOLOGIA LTDA</p>
             <p className="mt-1">CNPJ: 58.428.499/0001-12</p>
-            <a href="https://www.asacompany.com.br" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-foreground">
-              Desenvolvido por A.S.A Company
-            </a>
           </div>
 
           <nav className="flex flex-wrap gap-x-5 gap-y-2">
